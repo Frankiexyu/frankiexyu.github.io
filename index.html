@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Xiaofei (Frankie) Yu</title>
+<meta name="description" content="Xiaofei (Frankie) Yu, public policy researcher working on China's environmental and energy policy.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!--
+  ===============================================================
+  HOW TO EDIT THIS PAGE (no coding needed)
+  - Only change the plain words you see between tags, e.g.
+      <p>Change this sentence.</p>
+  - Do not delete the < > parts.
+  - The style settings just below control colours and fonts.
+    You can leave them alone.
+  ===============================================================
+-->
+
+<style>
+  :root {
+    --paper: #F5F8F7;      /* page background: very light mint-grey */
+    --ink: #1D2B2A;        /* main text: deep green-black */
+    --muted: #5B6B69;      /* secondary text */
+    --jade: #2E7766;       /* accent colour */
+    --mist: #DCEBE5;       /* soft accent background */
+    --line: #D3DFDB;       /* thin lines */
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #142120; --ink: #E6EFEC; --muted: #9DB1AC;
+      --jade: #7FC4B1; --mist: #1F3330; --line: #2A3F3C;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Figtree", "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 28px; }
+
+  /* Top navigation */
+  nav { padding: 28px 0 0; }
+  nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 24px; }
+  nav a { color: var(--muted); text-decoration: none; font-size: 15px; }
+  nav a:hover { color: var(--jade); }
+
+  /* Opening section */
+  header.hero { padding: 88px 0 72px; border-bottom: 1px solid var(--line); }
+  .name {
+    font-family: "Newsreader", Georgia, serif;
+    font-weight: 400;
+    font-size: clamp(44px, 8vw, 76px);
+    line-height: 1.02;
+    letter-spacing: -0.015em;
+    margin: 0;
+  }
+  .name-zh {
+    display: block;
+    font-size: 0.42em;
+    color: var(--jade);
+    letter-spacing: 0.08em;
+    margin-top: 14px;
+  }
+  .lede {
+    font-family: "Newsreader", Georgia, serif;
+    font-size: clamp(20px, 2.6vw, 25px);
+    line-height: 1.45;
+    max-width: 34em;
+    margin: 32px 0 0;
+  }
+  .actions { margin-top: 32px; display: flex; flex-wrap: wrap; gap: 12px; }
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 999px;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    border: 1px solid var(--jade);
+    color: var(--jade);
+  }
+  .btn.solid { background: var(--jade); color: var(--paper); }
+  .btn:hover { opacity: 0.85; }
+
+  /* Content sections: heading on the left, content on the right */
+  section {
+    display: grid;
+    grid-template-columns: 170px 1fr;
+    gap: 24px;
+    padding: 56px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  section h2 {
+    font-family: "Newsreader", Georgia, serif;
+    font-weight: 500;
+    font-size: 22px;
+    margin: 0;
+    color: var(--jade);
+  }
+  section p { margin: 0 0 14px; max-width: 38em; }
+  .item { margin-bottom: 28px; max-width: 38em; }
+  .item:last-child { margin-bottom: 0; }
+  .item h3 { font-size: 17px; font-weight: 600; margin: 0 0 4px; line-height: 1.45; }
+  .item .meta { color: var(--muted); font-size: 15px; margin: 0; }
+  .item .note { margin: 6px 0 0; font-size: 16px; }
+
+  .tags { display: flex; flex-wrap: wrap; gap: 10px; padding: 0; margin: 0; list-style: none; }
+  .tags li { background: var(--mist); padding: 6px 14px; border-radius: 999px; font-size: 15px; }
+
+  .row { display: grid; grid-template-columns: 120px 1fr; gap: 16px; margin-bottom: 22px; }
+  .row:last-child { margin-bottom: 0; }
+  .row .when { color: var(--muted); font-size: 15px; padding-top: 2px; }
+
+  a { color: var(--jade); }
+  a:focus-visible, .btn:focus-visible { outline: 2px solid var(--jade); outline-offset: 3px; }
+
+  footer { padding: 40px 0 56px; color: var(--muted); font-size: 14px; }
+
+  @media (max-width: 640px) {
+    header.hero { padding: 56px 0 48px; }
+    section { grid-template-columns: 1fr; gap: 14px; padding: 40px 0; }
+    .row { grid-template-columns: 1fr; gap: 2px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav aria-label="Main">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== OPENING ===== -->
+  <header class="hero">
+    <h1 class="name">Xiaofei (Frankie) Yu<span class="name-zh" lang="zh">余晓非</span></h1>
+    <p class="lede">I study how China's environmental and energy policies work in practice, using causal-inference methods to evaluate what they achieve and why.</p>
+    <div class="actions">
+      <!-- The CV button opens a file called cv.pdf. Upload your CV with exactly that name. -->
+      <a class="btn solid" href="cv.pdf">Download CV</a>
+      <a class="btn" href="mailto:xyuby@connect.ust.hk">Email me</a>
+    </div>
+  </header>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <h2>About</h2>
+    <div>
+      <p>I am a Senior Associate at the Bai Xian Asia Institute in Hong Kong. I hold a Master of Public Policy from the Hong Kong University of Science and Technology and a Bachelor of Management in Public Administration from Fudan University.</p>
+      <p>My work evaluates policy programmes such as emissions trading, air-pollution campaigns and the coal-to-gas transition, and asks how central–local relations and campaign-style governance shape their results. I am increasingly interested in China–Middle East energy relations.</p>
+    </div>
+  </section>
+
+  <!-- ===== RESEARCH INTERESTS ===== -->
+  <section id="interests">
+    <h2>Interests</h2>
+    <ul class="tags">
+      <li>Environmental &amp; energy policy</li>
+      <li>Policy evaluation</li>
+      <li>Central–local governance</li>
+      <li>Energy transition</li>
+      <li>China–Gulf energy relations</li>
+      <li>Public opinion &amp; survey research</li>
+    </ul>
+  </section>
+
+  <!-- ===== RESEARCH ===== -->
+  <section id="research">
+    <h2>Research</h2>
+    <div>
+      <div class="item">
+        <h3>The emission-reduction effect of China's carbon trading market: an empirical analysis based on the synthetic control method</h3>
+        <p class="meta">With Chen Xing. <em>Fudan Public Administration Review</em>, Vol. 26, pp. 207–240, 2023. In Chinese.</p>
+        <p class="note">Finds that the more active regional ETS pilots (Hubei, Shenzhen, Guangdong) cut emissions significantly.</p>
+      </div>
+      <div class="item">
+        <h3>Does China's "coal-to-gas" policy boost natural gas consumption? Evidence from a PSM-DID design</h3>
+        <p class="meta">Term paper, HKUST, 2024.</p>
+        <p class="note">Across 281 cities, gas consumption in the treated cities fell by about 28%, pointing to supply and implementation failures.</p>
+      </div>
+      <div class="item">
+        <h3>Performance evaluation of collaborative air-pollution governance in China: the Blue-Sky Protection Campaign</h3>
+        <p class="meta">Undergraduate thesis, Fudan University, 2022. Supervised by Zhou Lingyi.</p>
+        <p class="note">Synthetic DID on 240 cities shows PM2.5 reductions were largest where central intervention was strongest.</p>
+      </div>
+      <div class="item">
+        <h3>ESG compliance and regulatory gaps: strengthening Hong Kong listed companies' ESG reporting capacity</h3>
+        <p class="meta">Policy Analysis Project for Alaya Consulting, HKUST, 2024. Supervised by Prof. Masaru Yarime.</p>
+      </div>
+      <div class="item">
+        <h3>Did the Covid-19 pandemic affect people's belief in hard work? Evidence from six cities in Guangdong</h3>
+        <p class="meta">Course paper, HKUST, 2023.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <div>
+      <div class="row">
+        <div class="when">2024 – now</div>
+        <div class="item">
+          <h3>Senior Associate, Bai Xian Asia Institute, Hong Kong</h3>
+          <p class="note">Lead the team running the Asian Future Leaders Scholarship Program across 10 partner universities in 7 cities, and manage the annual Summer Program.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section id="education">
+    <h2>Education</h2>
+    <div>
+      <div class="row">
+        <div class="when">2022 – 2024</div>
+        <div class="item">
+          <h3>Master of Public Policy</h3>
+          <p class="meta">Hong Kong University of Science and Technology. Asian Future Leaders Scholar.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="when">2018 – 2022</div>
+        <div class="item">
+          <h3>Bachelor of Management, Public Administration</h3>
+          <p class="meta">Fudan University. Second major in English–Chinese Translation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div>
+      <p><strong>Methods:</strong> synthetic control, synthetic DID, PSM-DID, event studies, survey data analysis, interviews.</p>
+      <p><strong>Languages:</strong> Chinese (native), English (fluent, translation and interpreting training), Modern Hebrew (basic).</p>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div>
+      <p>The best way to reach me is by email at <a href="mailto:xyuby@connect.ust.hk">xyuby@connect.ust.hk</a>.</p>
+      <p>Based in Hong Kong SAR.</p>
+    </div>
+  </section>
+
+  <footer>Last updated October 2026</footer>
+
+</div>
+</body>
+</html>
